@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Илюхин Кирилл - Tetris </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/tetris.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="game-container">
+        
+        <canvas id="game-board"></canvas>
+
+        <div class="side-panel">
+            <div class="next-piece">
+                <span class="next">Next</span>
+                <canvas id="next-piece"></canvas>
+            </div>
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="level">Level: <span id="level">1</span></div>
+            <div class="lines">Lines: <span id="lines">0</span></div>
+            <button id="start-button">Start Game</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="./script/tetris.js"></script>
+</body>
+
+</html>

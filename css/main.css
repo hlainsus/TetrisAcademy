@@ -1,0 +1,91 @@
+@import url("reset.css");
+@import url("grid.css");
+
+:root {
+    --piece-i-color: #00BCD4;
+    --piece-o-color: #485FE5;
+    --piece-t-color: #FF9800;
+    --piece-s-color: #FFEB3B;
+    --piece-z-color: #4CAF50;
+    --piece-j-color: #A629BC;
+    --piece-l-color: #F44336;
+}
+
+
+
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(132, 148, 181, 1) 49%, rgba(69, 168, 255, 1) 100%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(225, 225, 225, 0.1);
+}
+
+canvas {
+    border:2px solid #333 ;
+    box-shadow: 0 0 10px rgba(225, 225, 225, 0.1);
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 200px;
+}
+
+.next-piece, .score, .level, .lines {
+    background-color: rgba(225, 225, 225, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#next-piece {
+    height: 250px;
+}
+
+.next {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+
+#start-button {
+    background-color: #00ff00;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: all 0.3s ease-in;
+}
+
+#start-button:hover {
+    background-color: #00dd00;
+    transform: scale(1.02);
+}
+
+.score, .level, .lines {
+    font-size: 14px;
+
+}
