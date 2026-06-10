@@ -183,7 +183,7 @@ class Tetris {
         if (linesCleared > 0) {
             this.score += [40, 100, 300, 1200][linesCleared - 1] * this.level;
             this.lines += linesCleared;
-            this.level = Math.floor(this.lines / 10) + 1;  
+            this.level = Math.floor(this.lines / 3) + 1;  
             this.dropInterval = Math.max(100, 1000 - (this.level - 1) * 50);  
             this.updateScore();
         }
